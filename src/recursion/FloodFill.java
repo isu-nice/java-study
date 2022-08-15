@@ -3,6 +3,7 @@ package recursion;
 import java.util.Arrays;
 
 public class FloodFill {
+	
 	static int N = 5;
 	public static void main(String[] args) {
 		int[][] board = {
@@ -15,7 +16,11 @@ public class FloodFill {
 		int startR = 1; int startC = 1;
 		fill(board,startR,startC);
 		
-		System.out.println(Arrays.deepToString(board));
+		//System.out.println(Arrays.deepToString(board));
+		for(int i = 0; i < N; i++) {
+			System.out.println(Arrays.toString(board[i]));
+		}
+		
 	}
 	
 	
